@@ -165,7 +165,7 @@ That is roughly the opposite of the "every query boils a kettle" framing, and it
 
 Where the figure does get large is in aggregate — billions of queries a day, and the data-center build-out behind them — neither of which a per-conversation meter can show. That, we think, is the honest place to point concern: not at the single query, but at the scale.
 
-Hidden Carbon is in beta. The code, and instructions for loading the extension, are on GitHub: [github.com/lukasdiebold/hidden_carbon](https://github.com/lukasdiebold/hidden_carbon).
+Hidden Carbon is in beta. The code, and instructions for loading the extension, are on GitHub: [github.com/lukasdiebold/hiddencarbon](https://github.com/lukasdiebold/hiddencarbon).
 
 ---
 
