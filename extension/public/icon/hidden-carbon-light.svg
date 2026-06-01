@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="hc-grad-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f0eb"></stop>
+      <stop offset="100%" stop-color="#e4e0d6"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="25.6" fill="url(#hc-grad-light)"></rect>
+  <circle cx="22.515" cy="64" r="10.995" fill="none" stroke="#2d5016" stroke-width="4.506"></circle>
+  <line x1="36.506" y1="59.494" x2="47.002" y2="59.494" stroke="#2d5016" stroke-width="3.494" stroke-linecap="round"></line>
+  <line x1="36.506" y1="68.506" x2="47.002" y2="68.506" stroke="#2d5016" stroke-width="3.494" stroke-linecap="round"></line>
+  <circle cx="64" cy="64" r="14.003" fill="#2d5016"></circle>
+  <line x1="80.998" y1="59.494" x2="91.494" y2="59.494" stroke="#2d5016" stroke-width="3.494" stroke-linecap="round"></line>
+  <line x1="80.998" y1="68.506" x2="91.494" y2="68.506" stroke="#2d5016" stroke-width="3.494" stroke-linecap="round"></line>
+  <circle cx="105.485" cy="64" r="10.995" fill="none" stroke="#2d5016" stroke-width="4.506"></circle>
+</svg>

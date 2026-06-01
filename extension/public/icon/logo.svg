@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d5016"/>
+      <stop offset="1" stop-color="#162a0c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="26" ry="26" fill="url(#bg)"/>
+
+  <g stroke="#7ed490" stroke-width="3" stroke-linecap="round" fill="none">
+    <!-- left O: hollow ring -->
+    <circle cx="28" cy="64" r="11"/>
+    <!-- right O: hollow ring -->
+    <circle cx="100" cy="64" r="11"/>
+  </g>
+
+  <!-- center C: filled disk, slightly larger -->
+  <circle cx="64" cy="64" r="13" fill="#7ed490"/>
+
+  <!-- double bonds: two parallel lines between each pair -->
+  <g stroke="#7ed490" stroke-width="2.5" stroke-linecap="round">
+    <line x1="42" y1="60" x2="49" y2="60"/>
+    <line x1="42" y1="68" x2="49" y2="68"/>
+    <line x1="79" y1="60" x2="86" y2="60"/>
+    <line x1="79" y1="68" x2="86" y2="68"/>
+  </g>
+</svg>
