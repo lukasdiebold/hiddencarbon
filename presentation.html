@@ -465,7 +465,7 @@
         <p class="subtle" style="margin-top:0.6em;">Both popular figures had errors or were decades out of date. We took each baseline from the corrected primary source.</p>
       </div>
       <aside class="notes">
-        Our two baselines are a web search and a minute of streaming, and getting these right took some digging, because the popular numbers are wrong. For search we use 0.02 grams. That comes from Vanderbauwhede, who took Google's old 2009 figure and updated it for better hardware, a more efficient data center, and today's grid. It lands about ten times below the 0.2 grams that people still cite. And note this is plain search — the AI Overviews Google now shows run sixty to seventy-five times higher, but we can't tell when those fire. For streaming we use 0.6 grams a minute, which is the IEA's figure after they corrected a widely shared claim that had streaming at six kilograms an hour — that one had an actual unit-conversion error in it. So the pattern we kept running into is that the numbers in circulation are inflated or out of date, and that's why we went back to the original papers for every baseline.
+        Our two baselines are a web search and a minute of streaming, and getting these right took some digging, because the popular numbers are wrong. For search we use 0.02 grams. That comes from Paper that took Google's old 2009 figure and updated it for better hardware, a more efficient data center, and today's grid. It lands about ten times below the 0.2 grams that people still cite. And note this is plain search, before anything with AI was happening. For streaming we use 0.6 grams a minute, which is the IEA's figure after they corrected a widely shared claim that had streaming at six kilograms an hour — that one had an actual unit-conversion error in it. So the pattern we kept running into is that the numbers in circulation are inflated or out of date, and that's why we went back to the original papers for every baseline.
       </aside>
     </section>
 
@@ -491,13 +491,13 @@
           <line x1="576" y1="170" x2="576" y2="74" stroke="var(--green)" stroke-width="3"/>
           <circle cx="576" cy="170" r="14" fill="var(--green)"/>
           <text x="576" y="56" text-anchor="middle" font-size="44" font-weight="700" fill="var(--green)">0.15 g</text>
-          <text x="576" y="118" text-anchor="middle" font-size="19" font-weight="600" fill="var(--ink)">one LLM query</text>
+          <text x="576" y="218" text-anchor="middle" font-size="19" font-weight="600" fill="var(--ink)">one LLM query</text>
         </svg>
         <p class="statement sm" style="margin-top:0.3em;">≈ <span class="accent">7 searches</span>, and a fraction of a minute of video.</p>
         <p class="subtle">Not negligible — but nowhere near the "kettle of water" you read about. <span class="tiny">(500 in / 1,000 out tokens; Claude grid ≈231 g/kWh.)</span></p>
       </div>
       <aside class="notes">
-        So here's the answer to the question we started with. Take a representative Claude turn — 500 tokens in, a thousand out — at the grid intensity we computed. That works out to about two-thirds of a watt-hour, and about 0.15 grams of CO2. In familiar terms, that's roughly seven web searches, or about a quarter-minute of streaming. Please don't read too much into the exact digits — the point is where it lands. An LLM message costs noticeably more than a single search, on the order of a handful of them. But a long video session still outweighs a whole afternoon of chatting. Putting the number in that range, between two things you already understand, is exactly what we set out to do. It's not nothing, but it's also not the kettle of water you read about.
+        So here's the answer to the question we started with. Take a representative Claude turn — 500 tokens in, a thousand out. That works out to about 0.15 grams of CO2. In familiar terms, that's roughly seven web searches, or about a quarter-minute of streaming. Please don't read too much into the exact digits — the point is where it lands. An LLM message costs noticeably more than a single search, on the order of a handful of them. 
       </aside>
     </section>
 
@@ -514,7 +514,7 @@
         <p class="subtle">Margins would push it high; pricing inference below cost pushes it low. The gap really shows that <b>price has come loose from physical cost</b> in this market.</p>
       </div>
       <aside class="notes">
-        To check ourselves, we tried a completely different method. Instead of physics, this one works from money: you take what you'd pay for the API and multiply by an EPA emission factor for data hosting. That gives 1.06 grams, where our bottom-up number was 0.15 — about seven times apart. What's interesting is that we can't even say which one is wrong. Normally a spend-based number runs high, because the price includes profit margin that doesn't buy any electricity. But right now the AI companies are pricing inference below cost, subsidized by investors, which would push it the other way and make it run low. So the most useful way to read this gap is that in this market the price has come loose from the actual physical cost. We only use this as a sanity check, never as our headline number — partly because it also assigns basically zero to free services like search and YouTube, which is obviously wrong.
+        To check ourselves, we tried a completely different method. Instead of physics, this one works from money: you take what you'd pay for the API and multiply by an EPA emission factor. That gives 1.06 grams, where our bottom-up number was 0.15 — about seven times apart. What's interesting is that we can't even say which one is wrong. Normally a spend-based number runs high, because the price includes profit margin that doesn't buy any electricity. But right now the AI companies are pricing inference below cost, to grab market share, which would push it the other way and make it run low. So the most useful way to read this gap is that in this market the price has come loose from the actual physical cost. We only use this as a sanity check — partly because it also assigns basically zero to free services like search and YouTube, which is obviously wrong.
       </aside>
     </section>
 
@@ -553,7 +553,7 @@
         <p class="subtle">Narrow scope, constants from primary literature, boundary stated out loud — an estimate we can defend, not one that looks more precise than it is.</p>
       </div>
       <aside class="notes">
-        I want to be upfront about where this falls short. Reasoning models cost roughly ten times more per output token, and we don't tell them apart yet. The streaming comparison mixes the two boundaries I mentioned. We infer which data center serves you rather than observing it. We approximate tokens with the characters-over-four rule. The underlying energy factors are uncertain by tens of percent. And we don't handle images or audio yet. That said, the way we worked the whole time was to keep the scope narrow, take our constants from the published literature, and state the boundary out loud. We'd rather give you a number we can actually defend than one that looks precise and isn't.
+        We want to be upfront about where this falls short. Reasoning models cost roughly ten times more per output token, and it is very difficult telling them apart. The streaming comparison mixes the two boundaries I mentioned. We infer which data center serves you rather than observing it. We approximate tokens with the characters-over-four rule. The underlying energy factors are uncertain by tens of percent. And we don't handle images or audio yet. 
       </aside>
     </section>
 
@@ -566,7 +566,7 @@
         <div class="subtle">A live meter across Claude, ChatGPT &amp; Gemini — measured against things you already understand. Not a guilt trip; just the number, so you can decide for yourself.</div>
       </div>
       <aside class="notes">
-        To wrap up. We built a working extension across Claude, ChatGPT, and Gemini that shows you a CO2 estimate for each conversation as you go. It expresses that estimate against two familiar baselines, web searches and minutes of streaming, both sourced from corrected primary figures. The main finding is that an LLM message costs about a handful of searches — not negligible, but well below the alarming numbers you usually hear. And along the way we found a second thing: in this market, price has drifted away from physical cost, and that's exactly what breaks the spend-based accounting method. The goal here was never to make anyone feel guilty — it's a quiet meter that lets you see the cost and decide for yourself. Thanks — we're happy to take questions.
+        To wrap up. We built a working extension across Claude, ChatGPT, and Gemini that shows you a CO2 estimate for each conversation as you go. It expresses that estimate against two familiar baselines, web searches and minutes of streaming, both sourced from corrected primary figures. The main finding is that an LLM message costs about a handful of searches — not negligible, but well below the alarming numbers you usually hear. So let's look at a quick demo.
       </aside>
     </section>
 
