@@ -387,8 +387,10 @@ figure {
 }
 figure img {
   width: 100%;
+  max-width: 420px;
   height: auto;
   display: block;
+  margin: 0 auto;
   border: 1px solid var(--card-bd);
   border-radius: 14px;
   background: var(--card-bg);
